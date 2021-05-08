@@ -27,10 +27,9 @@ public class Apples : MonoBehaviour
         if (other.tag.Equals("Ball1"))
         {
             FallingBall.statusRB = true;
-            Debug.Log("EEEE!");
         }
 
-        if (other.tag.Equals("Blow to the head"))
+        if (other.tag.Equals("BlowToTheHead"))
         {
             HealthBar.heatlth -= FallingBall.domage;
         }

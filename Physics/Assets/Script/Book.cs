@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Book : MonoBehaviour
 {
-    [SerializeField] public GameObject book;
+    [SerializeField] private GameObject book;
     private bool statusBook = false;
     
         
