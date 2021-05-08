@@ -8,6 +8,7 @@ TagManager:
   - Block
   - Apple
   - Ball1
+  - BlowToTheHead
   layers:
   - Default
   - TransparentFX

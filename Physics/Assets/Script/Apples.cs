@@ -28,6 +28,10 @@ public class Apples : MonoBehaviour
         {
             FallingBall.statusRB = true;
             Debug.Log("EEEE!");
+        }
+
+        if (other.tag.Equals("Blow to the head"))
+        {
             HealthBar.heatlth -= FallingBall.domage;
         }
     }
