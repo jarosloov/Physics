@@ -9,6 +9,9 @@ TagManager:
   - Apple
   - Ball1
   - BlowToTheHead
+  - FirstPlate
+  - SecondPlate
+  - ThirdPlate
   layers:
   - Default
   - TransparentFX
