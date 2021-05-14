@@ -8,7 +8,7 @@ public class Apples : MonoBehaviour
 {
     public AudioSource AppleAuduo;
     public GameObject firstPlate;
-    private int numer = 0;
+    //private int numer = 0;
     
     private void Start()
     {
@@ -29,6 +29,12 @@ public class Apples : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.GetComponent<Chest>())
+        {
+            
+            Debug.Log("RRR");
+        }
+        
         if (other.tag.Equals("Apple"))
         {
             Destroy(other.gameObject);

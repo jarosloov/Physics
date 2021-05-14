@@ -12,6 +12,7 @@ TagManager:
   - FirstPlate
   - SecondPlate
   - ThirdPlate
+  - Chest
   layers:
   - Default
   - TransparentFX
