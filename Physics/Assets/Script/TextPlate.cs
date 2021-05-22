@@ -25,6 +25,7 @@ public class TextPlate : MonoBehaviour
 
     public static void PlayText(int num)
     {
-        plate.text = textPlat[num];
+        
     }
+    
 }

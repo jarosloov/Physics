@@ -106,81 +106,114 @@ public class Swordman : PlayerController
 
             }
         }
-
-
+        
         if (Input.GetKey(KeyCode.Alpha1))
         {
             m_Anim.Play("Die");
-
         }
 
         // 기타 이동 인풋.
 
         if (Input.GetKey(KeyCode.D))
         {
-
+            if (Gravity.gravity)
+            {
+                if (isGrounded)  // 땅바닥에 있었을때. 
+                {
+                    if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                        return;
+                    transform.transform.Translate(Vector2.right * (m_MoveX * MoveSpeed * Time.deltaTime));
+                }
+                else
+                {
+                    transform.transform.Translate(new Vector3(m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
+                } 
+                if (!Input.GetKey(KeyCode.A))
+                    Filp(false);
+            }
+            if (!Gravity.gravity)
+            {
+                if (isGrounded)  // 땅바닥에 있었을때. 
+                {
+                    if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                        return;
+                    transform.transform.Translate(-Vector2.right * (m_MoveX * MoveSpeed * Time.deltaTime));
+                }
+                else
+                {
+                    transform.transform.Translate(new Vector3(-m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
+                }  
+                if (!Input.GetKey(KeyCode.A))
+                    Filp(true);
+            }
+            /*
             if (isGrounded)  // 땅바닥에 있었을때. 
             {
-
-
-
                 if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                     return;
-
-                transform.transform.Translate(Vector2.right* m_MoveX * MoveSpeed * Time.deltaTime);
-
-
-
+                transform.transform.Translate(Vector2.right * (m_MoveX * MoveSpeed * Time.deltaTime));
             }
             else
             {
-
                 transform.transform.Translate(new Vector3(m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
-
             }
-
-
-
-
+            */
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
-
-            if (!Input.GetKey(KeyCode.A))
-                Filp(false);
-
-
         }
         else if (Input.GetKey(KeyCode.A))
         {
+            if (Gravity.gravity)
+            {
+                if (isGrounded)  // 땅바닥에 있었을때. 
+                {
+                    if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                        return;
+                    transform.transform.Translate(Vector2.right * (m_MoveX * MoveSpeed * Time.deltaTime));
+                }
+                else
+                {
+                    transform.transform.Translate(new Vector3(m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
+                }
 
+                if (!Input.GetKey(KeyCode.D))
+                    Filp(true);
+            }
 
+            if (!Gravity.gravity)
+            {
+                if (isGrounded)  // 땅바닥에 있었을때. 
+                {
+                    if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                        return;
+                    transform.transform.Translate(-Vector2.right * (m_MoveX * MoveSpeed * Time.deltaTime));
+                }
+                else
+                {
+                    transform.transform.Translate(new Vector3(-m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
+                }
+                if (!Input.GetKey(KeyCode.D))
+                    Filp(false); 
+            }
+            
+            if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                return;
+            /*
             if (isGrounded)  // 땅바닥에 있었을때. 
             {
-
-
-
                 if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                     return;
-
-
-                transform.transform.Translate(Vector2.right * m_MoveX * MoveSpeed * Time.deltaTime);
-
+                transform.transform.Translate(Vector2.right * (m_MoveX * MoveSpeed * Time.deltaTime));
             }
             else
             {
-
                 transform.transform.Translate(new Vector3(m_MoveX * MoveSpeed * Time.deltaTime, 0, 0));
-
             }
-
-
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
-
             if (!Input.GetKey(KeyCode.D))
                 Filp(true);
-
-
+            */
         }
 
 
@@ -188,30 +221,18 @@ public class Swordman : PlayerController
         {
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
-
-
             if (currentJumpCount < JumpCount)  // 0 , 1
             {
-
                 if (!IsSit)
                 {
                     prefromJump();
-
-
                 }
                 else
                 {
                     DownJump();
-
                 }
-
             }
-
-
         }
-
-
-
     }
 
 

@@ -73,8 +73,18 @@ public abstract class PlayerController :MonoBehaviour
         m_Anim.Play("Jump");
 
         m_rigidbody.velocity = new Vector2(0, 0);
+        
+        switch (Gravity.gravity)
+        {
+            case true:
+                m_rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+                break;
+            case false:
+                m_rigidbody.AddForce(-Vector2.up * jumpForce, ForceMode2D.Impulse);
+                break;
+        }
 
-        m_rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        //m_rigidbody.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
         OnceJumpRayCheck = true;
         isGrounded = false;
@@ -94,7 +104,10 @@ public abstract class PlayerController :MonoBehaviour
         {
             m_Anim.Play("Jump");
 
-            m_rigidbody.AddForce(-Vector2.up * 10);
+            
+            m_rigidbody.AddForce(-Vector2.up * 10);     
+            
+            //m_rigidbody.AddForce(-Vector2.up * 10);
             isGrounded = false;
 
             m_CapsulleCollider.enabled = false;
@@ -153,12 +166,6 @@ public abstract class PlayerController :MonoBehaviour
 
                     LandingEvent();
                     OnceJumpRayCheck = false;
-
-                }
-                else
-                {
-
-                    Debug.Log("안부딪힘");
 
                 }
 

@@ -47,16 +47,14 @@ public class Menu : MonoBehaviour
 
     public void VariantLanguage(int numer)
     {
-        if (numer == 0)
+        switch (numer)
         {
-            Debug.Log("Русский");
-            lang.text = "< Язык >";
-        }
-
-        if (numer == 1)
-        {
-            Debug.Log("ИНГЛИШЬ");
-            lang.text = "< language >";
+            case 0:
+                MenuLanguage.Russian();
+                break;
+            case 1:
+                MenuLanguage.English();
+                break;
         }
     }
 }
