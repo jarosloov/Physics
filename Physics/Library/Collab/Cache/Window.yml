@@ -14,16 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - "Assets/Music/\u041C\u0435\u043D\u044E.mp3"
-    - "Assets/Music/\u041C\u0435\u043D\u044E.mp3.meta"
-    - "Assets/Music/\u043C\u0435\u043D\u044E 2.mp3"
-    - "Assets/Music/\u043C\u0435\u043D\u044E 2.mp3.meta"
-    - Assets/Script/Menu/Menu.cs
-    - Assets/Script/Menu/MenuLanguage.cs
-    - Assets/Script/Menu/MenuLanguage.cs.meta
     - 
-    m_Values: 0101010101010101
-  RevisionSummary: 
+    m_Values: 01
+  RevisionSummary: "\u043C\u043E\u043D\u0442\u0430\u0436\u043D\u0430\u044F \u043F\u0435\u043D\u0430"
   ChangesSearchValue: 
   SelectedHistoryRevision: 
   HistoryPageNumber: 0
