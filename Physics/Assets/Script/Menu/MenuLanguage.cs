@@ -9,7 +9,7 @@ public class MenuLanguage : MonoBehaviour
 {
     [SerializeField] public Text _language1, _language2, _play,_settings1,_settings2, 
         _exit, _comeBack1,  _comeBack2, _audio, _authors, _controlling;
-    [NotNull] public static Text language1, language2, play,settings1,settings2,
+    [SerializeField] private static Text language1, language2, play,settings1,settings2,
         exit, comeBack1, comeBack2, audio, authors, controlling;
 
     private void Start()

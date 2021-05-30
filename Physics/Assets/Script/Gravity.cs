@@ -15,7 +15,7 @@ public class Gravity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (Input.GetMouseButtonDown(1))
         {
             _rigidbody2D.gravityScale *= -1 ;
             gravity = !gravity;

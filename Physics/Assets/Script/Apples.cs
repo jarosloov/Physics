@@ -9,29 +9,43 @@ public class Apples : MonoBehaviour
     public AudioSource AppleAuduo;
     public GameObject firstPlate;
     //private int numer = 0;
+    public static bool statusChest;
     
     private void Start()
     {
         AppleAuduo = GetComponent<AudioSource>();
         firstPlate.SetActive(false);
+        statusChest = false;
     }
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.Q))
+        if(Input.GetKey(KeyCode.Q)) 
             firstPlate.SetActive(false);
     }
 
     public  void Continue()
     {
         firstPlate.SetActive(false);
-
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.GetComponent<Chest>())
+        if (other.GetComponent<FoldingApples>())
         {
-            
+            statusChest = true;
+            Debug.Log(statusChest);
+            AppleSize.appleSize = 0;
+        }
+        
+        if (!other.GetComponent<FoldingApples>())
+        {
+            statusChest = false;
+            Debug.Log(statusChest);
+        }
+        
+        
+        if (other.GetComponent<ChestSpawn>())
+        {
             Debug.Log("RRR");
         }
         
