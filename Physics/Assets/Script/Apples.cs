@@ -31,6 +31,10 @@ public class Apples : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.GetComponent<Spikes>())
+        {
+            HealthBar.heatlth -= 10;
+        }
         
         
         if (other.GetComponent<FoldingApples>())
