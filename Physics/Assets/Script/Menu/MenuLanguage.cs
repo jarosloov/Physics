@@ -8,9 +8,9 @@ using UnityEngine.UI;
 public class MenuLanguage : MonoBehaviour
 {
     [SerializeField] public Text _language1, _language2, _play,_settings1,_settings2, 
-        _exit, _comeBack1,  _comeBack2, _audio, _authors, _controlling;
+        _exit, _comeBack1,  _comeBack2, _audio1, _authors, _controlling;
     [SerializeField] private static Text language1, language2, play,settings1,settings2,
-        exit, comeBack1, comeBack2, audio, authors, controlling;
+        exit, comeBack1, comeBack2, audio1, authors, controlling;
 
     private void Start()
     {
@@ -22,7 +22,7 @@ public class MenuLanguage : MonoBehaviour
         exit = _exit;
         comeBack1 = _comeBack1;
         comeBack2 = _comeBack2;
-        audio = _audio;
+        audio1 = _audio1;
         authors = _authors;
         controlling = _controlling;
     }
@@ -37,7 +37,7 @@ public class MenuLanguage : MonoBehaviour
         exit.text = "Выход";
         comeBack1.text = "вернуться назад";
         comeBack2.text = "вернуться назад";
-        audio.text = "звук";
+        audio1.text = "звук";
         authors.text = "авторы";
         controlling.text = "управление";
     }
@@ -52,7 +52,7 @@ public class MenuLanguage : MonoBehaviour
         exit.text = "Exit";
         comeBack1.text = "come back";
         comeBack2.text = "come back";
-        audio.text = "audio";
+        audio1.text = "audio";
         authors.text = "authors";
         controlling.text = "controlling";
     }

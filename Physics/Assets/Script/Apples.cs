@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class Apples : MonoBehaviour
 {
     public AudioSource AppleAuduo;
     public GameObject firstPlate;
-    //private int numer = 0;
     public static bool statusChest;
+    
     
     private void Start()
     {
@@ -30,20 +31,19 @@ public class Apples : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
+        
+        
         if (other.GetComponent<FoldingApples>())
         {
             statusChest = true;
-            Debug.Log(statusChest);
             AppleSize.appleSize = 0;
         }
-        
-        if (!other.GetComponent<FoldingApples>())
+        else
         {
             statusChest = false;
-            Debug.Log(statusChest);
         }
-        
-        
+
+
         if (other.GetComponent<ChestSpawn>())
         {
             Debug.Log("RRR");

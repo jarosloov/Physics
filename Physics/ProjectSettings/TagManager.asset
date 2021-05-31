@@ -13,6 +13,7 @@ TagManager:
   - SecondPlate
   - ThirdPlate
   - Chest
+  - Dver
   layers:
   - Default
   - TransparentFX
