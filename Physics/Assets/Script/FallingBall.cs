@@ -28,7 +28,7 @@ public class FallingBall : MonoBehaviour
     
     IEnumerator Falling()
     {
-        yield return new WaitForSeconds(7f);
+        yield return new WaitForSeconds(3f);
         Destroy(gameObject);
     }
 }

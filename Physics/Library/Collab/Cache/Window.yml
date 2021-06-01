@@ -14,23 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Prefabs/Apple.prefab
-    - Assets/Prefabs/Spike.prefab
-    - Assets/Prefabs/Spike.prefab.meta
-    - Assets/Scenes/SampleScene.unity
     - Assets/Script/AppleSize.cs
     - Assets/Script/Apples.cs
     - Assets/Script/DoorOpening.cs
     - Assets/Script/FallingBall.cs
-    - Assets/Script/FoldingApples.cs
-    - Assets/Script/HealthBar.cs
-    - Assets/Script/Trigers/Spikes.cs
-    - Assets/Script/Trigers/Spikes.cs.meta
-    - "Assets/Sprites/Tilemap/Tree/\u0414\u0435\u0440\u0435\u0432\u043E_1.asset"
-    - "Assets/Video/\u0412\u0438\u0434\u0435\u043E \u043A\u0430\u0442\u0435\u0433\u043E\u0440\u0438\u0438
-      \u0411.mp4"
+    - Assets/Script/Trigers/StopTrening.cs
+    - Assets/Script/Trigers/StopTrening.cs.meta
+    - Assets/Script/Trigers/Trening.cs
+    - Assets/Script/Trigers/Trening.cs.meta
     - 
-    m_Values: 000000000000000000000000000000
+    m_Values: 000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

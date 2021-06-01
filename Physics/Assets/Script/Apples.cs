@@ -10,6 +10,8 @@ public class Apples : MonoBehaviour
     public AudioSource AppleAuduo;
     public GameObject firstPlate;
     public static bool statusChest;
+    public static bool isTrening = true;
+    public static bool isTreningStop = false;
     
     
     private void Start()
@@ -36,6 +38,8 @@ public class Apples : MonoBehaviour
             HealthBar.heatlth -= 10;
         }
         
+        isTrening = other.GetComponent<Trening>();
+        isTreningStop = other.GetComponent<StopTrening>();
         
         if (other.GetComponent<FoldingApples>())
         {
@@ -46,12 +50,7 @@ public class Apples : MonoBehaviour
         {
             statusChest = false;
         }
-
-
-        if (other.GetComponent<ChestSpawn>())
-        {
-            Debug.Log("RRR");
-        }
+        
         
         if (other.tag.Equals("Apple"))
         {

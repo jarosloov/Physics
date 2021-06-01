@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class DoorOpening : MonoBehaviour
 {
-    [SerializeField] private  GameObject door;
+    [SerializeField] private  GameObject doorTrening;
+    [SerializeField] private GameObject doorUp;
     void Update()
     {
-        if(AppleSize.appleSize >= AppleSize.applesMaxSize)
-            Destroy(door);
+        // для тренеровки
+        if(AppleSize.appleSize >= AppleSize.applesMaxTrening)
+            Destroy(doorTrening);
+        
+        if(AppleSize.appleSize >= AppleSize.appleMaxPlay)
+            Destroy(doorUp);
+        
     }
 }
