@@ -14,16 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
-    - Assets/Script/AppleSize.cs
-    - Assets/Script/Apples.cs
-    - Assets/Script/DoorOpening.cs
-    - Assets/Script/FallingBall.cs
-    - Assets/Script/Trigers/StopTrening.cs
-    - Assets/Script/Trigers/StopTrening.cs.meta
-    - Assets/Script/Trigers/Trening.cs
-    - Assets/Script/Trigers/Trening.cs.meta
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Script/Menu/Menu.cs
+    - Assets/Script/Pause.cs
+    - Assets/Script/Pause.cs.meta
+    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 000000000000000000
+    m_Values: 000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

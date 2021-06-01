@@ -38,6 +38,11 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(1);
     }
 
+    public void Exit()
+    {
+        Application.Quit();
+    }
+
     public void Language()
     {
         language.SetActive(true);
