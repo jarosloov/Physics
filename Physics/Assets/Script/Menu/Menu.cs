@@ -10,14 +10,16 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject settings;
     [SerializeField] private GameObject language;
     [SerializeField] private GameObject menu;
+    [SerializeField] private GameObject video;
 
-    [SerializeField] private Text lang;
+    //[SerializeField] private Text lang;
 
     private void Start()
     {
         settings.SetActive(false);
         language.SetActive(false);
         menu.SetActive(true);
+        video.SetActive(true);
     }
 
     public void Settings()
@@ -35,7 +37,9 @@ public class Menu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene(1);
+        Time.timeScale = 1;
+        menu.SetActive(false);
+        video.SetActive(false);
     }
 
     public void Exit()

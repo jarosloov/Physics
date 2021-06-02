@@ -17,10 +17,8 @@ MonoBehaviour:
     - Assets/Scenes/SampleScene.unity
     - Assets/Script/Menu/Menu.cs
     - Assets/Script/Pause.cs
-    - Assets/Script/Pause.cs.meta
-    - ProjectSettings/UnityConnectSettings.asset
     - 
-    m_Values: 000000000000
+    m_Values: 00000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
