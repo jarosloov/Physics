@@ -12,14 +12,28 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject menu;
     [SerializeField] private GameObject video;
 
+    [SerializeField] private GameObject player;
+    [SerializeField] private AudioSource fonAudioSource;
+
+    public static  bool isMenu;
     //[SerializeField] private Text lang;
 
     private void Start()
     {
+        fonAudioSource = GetComponent<AudioSource>();
         settings.SetActive(false);
         language.SetActive(false);
         menu.SetActive(true);
         video.SetActive(true);
+        player.transform.position = new Vector3(-10, -1 , 0);
+        
+    }
+
+    private void Update()
+    {
+        if(!isMenu)
+            fonAudioSource.Stop();
+        
     }
 
     public void Settings()
@@ -37,9 +51,11 @@ public class Menu : MonoBehaviour
 
     public void Play()
     {
-        Time.timeScale = 1;
+        isMenu = false;
         menu.SetActive(false);
         video.SetActive(false);
+        player.transform.position = new Vector3(-10, -1 , 0);
+
     }
 
     public void Exit()

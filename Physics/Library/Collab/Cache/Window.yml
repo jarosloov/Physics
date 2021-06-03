@@ -14,11 +14,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
     m_Keys:
+    - Assets/AssetStore/Low_Swordman/2.Animation/Die.anim
+    - Assets/Music/ES_Vaporize - Vaporize (www.hotplayer.ru).mp3
+    - Assets/Music/ES_Vaporize - Vaporize (www.hotplayer.ru).mp3.meta
     - Assets/Scenes/SampleScene.unity
+    - Assets/Script/CameraSound.cs
+    - Assets/Script/CameraSound.cs.meta
+    - Assets/Script/HealthBar.cs
     - Assets/Script/Menu/Menu.cs
     - Assets/Script/Pause.cs
+    - Assets/Script/Trigers/CaveSound.cs
+    - Assets/Script/Trigers/CaveSound.cs.meta
+    - ProjectSettings/EditorBuildSettings.asset
     - 
-    m_Values: 00000000
+    m_Values: 00000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

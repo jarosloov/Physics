@@ -30,5 +30,6 @@ public class Pause : MonoBehaviour
         planePause.SetActive(false);
         menu.SetActive(true);
         video.SetActive(true);
+        Menu.isMenu = true;
     }
 }

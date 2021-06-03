@@ -13,7 +13,6 @@ ScriptsOnlyBuild:
     - GroundSensor
     - HealthBar
     - Menu
-    - MenuLanguage
     - Pause
     - PlayVideo
     - Spikes
@@ -30,12 +29,10 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
-    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -124,139 +121,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Menu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 86
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1622}
-    - Class: 114
-      Script: {instanceID: 1624}
-    - Class: 114
-      Script: {instanceID: 1626}
-    - Class: 114
-      Script: {instanceID: 1628}
-    - Class: 114
-      Script: {instanceID: 1634}
-    - Class: 114
-      Script: {instanceID: 1768}
-    - Class: 114
-      Script: {instanceID: 2326}
-    - Class: 114
-      Script: {instanceID: 2338}
-    - Class: 114
-      Script: {instanceID: 2426}
-    - Class: 114
-      Script: {instanceID: 2640}
-    - Class: 114
-      Script: {instanceID: 3084}
-    - Class: 114
-      Script: {instanceID: 3210}
-    - Class: 114
-      Script: {instanceID: 3236}
-    - Class: 114
-      Script: {instanceID: 3302}
-    - Class: 114
-      Script: {instanceID: 3422}
-    - Class: 114
-      Script: {instanceID: 3536}
-    - Class: 114
-      Script: {instanceID: 3822}
-    - Class: 114
-      Script: {instanceID: 3936}
-    - Class: 114
-      Script: {instanceID: 4240}
-    - Class: 114
-      Script: {instanceID: 4284}
-    - Class: 114
-      Script: {instanceID: 5024}
-    - Class: 114
-      Script: {instanceID: 5034}
-    - Class: 114
-      Script: {instanceID: 5094}
-    - Class: 114
-      Script: {instanceID: 5270}
-    - Class: 114
-      Script: {instanceID: 5272}
-    - Class: 114
-      Script: {instanceID: 5294}
-    - Class: 114
-      Script: {instanceID: 5554}
-    - Class: 114
-      Script: {instanceID: 5670}
-    - Class: 114
-      Script: {instanceID: 5676}
-    - Class: 114
-      Script: {instanceID: 5822}
-    - Class: 114
-      Script: {instanceID: 5886}
-    - Class: 114
-      Script: {instanceID: 5892}
-    - Class: 114
-      Script: {instanceID: 5976}
-    - Class: 114
-      Script: {instanceID: 6010}
-    - Class: 114
-      Script: {instanceID: 6056}
-    - Class: 114
-      Script: {instanceID: 6112}
-    - Class: 114
-      Script: {instanceID: 6122}
-    - Class: 114
-      Script: {instanceID: 6232}
-    - Class: 114
-      Script: {instanceID: 6350}
-    - Class: 114
-      Script: {instanceID: 6458}
-    - Class: 114
-      Script: {instanceID: 6504}
-    - Class: 114
-      Script: {instanceID: 6818}
-    - Class: 114
-      Script: {instanceID: 7080}
-    - Class: 114
-      Script: {instanceID: 7378}
-    - Class: 114
-      Script: {instanceID: 7602}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
     Assets/Scenes/SampleScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -321,7 +185,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1628}
     - Class: 114
+      Script: {instanceID: 1634}
+    - Class: 114
       Script: {instanceID: 1676}
+    - Class: 114
+      Script: {instanceID: 1768}
     - Class: 114
       Script: {instanceID: 1770}
     - Class: 114
@@ -329,7 +197,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2326}
     - Class: 114
+      Script: {instanceID: 2338}
+    - Class: 114
       Script: {instanceID: 2396}
+    - Class: 114
+      Script: {instanceID: 2426}
     - Class: 114
       Script: {instanceID: 2584}
     - Class: 114
@@ -347,13 +219,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3184}
     - Class: 114
+      Script: {instanceID: 3210}
+    - Class: 114
+      Script: {instanceID: 3236}
+    - Class: 114
       Script: {instanceID: 3254}
     - Class: 114
+      Script: {instanceID: 3302}
+    - Class: 114
       Script: {instanceID: 3378}
+    - Class: 114
+      Script: {instanceID: 3422}
     - Class: 114
       Script: {instanceID: 3446}
     - Class: 114
       Script: {instanceID: 3492}
+    - Class: 114
+      Script: {instanceID: 3536}
     - Class: 114
       Script: {instanceID: 3648}
     - Class: 114
@@ -363,6 +245,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3856}
     - Class: 114
+      Script: {instanceID: 3936}
+    - Class: 114
+      Script: {instanceID: 4240}
+    - Class: 114
       Script: {instanceID: 4284}
     - Class: 114
       Script: {instanceID: 4604}
@@ -371,21 +257,55 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5014}
     - Class: 114
+      Script: {instanceID: 5024}
+    - Class: 114
+      Script: {instanceID: 5034}
+    - Class: 114
+      Script: {instanceID: 5094}
+    - Class: 114
       Script: {instanceID: 5106}
     - Class: 114
       Script: {instanceID: 5196}
     - Class: 114
       Script: {instanceID: 5220}
     - Class: 114
+      Script: {instanceID: 5270}
+    - Class: 114
+      Script: {instanceID: 5272}
+    - Class: 114
+      Script: {instanceID: 5294}
+    - Class: 114
+      Script: {instanceID: 5554}
+    - Class: 114
       Script: {instanceID: 5634}
     - Class: 114
       Script: {instanceID: 5676}
+    - Class: 114
+      Script: {instanceID: 5822}
+    - Class: 114
+      Script: {instanceID: 5886}
+    - Class: 114
+      Script: {instanceID: 5892}
+    - Class: 114
+      Script: {instanceID: 5976}
+    - Class: 114
+      Script: {instanceID: 6010}
+    - Class: 114
+      Script: {instanceID: 6056}
     - Class: 114
       Script: {instanceID: 6112}
     - Class: 114
       Script: {instanceID: 6122}
     - Class: 114
       Script: {instanceID: 6220}
+    - Class: 114
+      Script: {instanceID: 6232}
+    - Class: 114
+      Script: {instanceID: 6350}
+    - Class: 114
+      Script: {instanceID: 6458}
+    - Class: 114
+      Script: {instanceID: 6504}
     - Class: 114
       Script: {instanceID: 6566}
     - Class: 114
@@ -407,9 +327,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7370}
     - Class: 114
+      Script: {instanceID: 7378}
+    - Class: 114
+      Script: {instanceID: 7602}
+    - Class: 114
       Script: {instanceID: 7782}
     - Class: 114
-      Script: {instanceID: 22194}
+      Script: {instanceID: 22196}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1893,6 +1817,5 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   platform: 5
   scenePathNames:
-  - Assets/Scenes/Menu.unity
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/GitHub/PhysicsTest/Version 0.02/Physics.exe
+  playerPath: C:/GitHub/PhysicsTest/Version 0.03/Physics.exe

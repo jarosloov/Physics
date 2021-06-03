@@ -9,9 +9,13 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public float maxHealth = 100f; // максимальное количесво здоровья
     public static float heatlth; // текущее здоровье 
+    public Animator animator;
+    
+    [SerializeField] private GameObject menu;
     
     void Start()
     {
+        Animation anim = GetComponent<Animation>();
         slider.maxValue = maxHealth;
         slider.value = maxHealth;
         heatlth = maxHealth;
@@ -21,7 +25,20 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         slider.value = heatlth;
-        if(heatlth <=0)
-            SceneManager.LoadScene(1);
+        if (heatlth + 1 <= 0)
+        {
+            StartCoroutine(Die());
+            StopCoroutine(Die());
+        }
+            
     }
+
+    IEnumerator Die()
+    {
+        animator.Play("Die");
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(0);
+        menu.SetActive(false);
+    }
+    
 }
