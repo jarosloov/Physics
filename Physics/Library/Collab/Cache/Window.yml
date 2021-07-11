@@ -13,8 +13,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys: []
-    m_Values: 
+    m_Keys:
+    - "Assets/AssetStore/Low_Swordman/1.Sprite/\u043C\u0435\u0447\u043D\u0435\u043E\u043D\u043E\u0432\u044B\u0439.png"
+    - "Assets/AssetStore/Low_Swordman/1.Sprite/\u043C\u0435\u0447\u043D\u0435\u043E\u043D\u043E\u0432\u044B\u0439.png.meta"
+    - "Assets/Music/\u0437\u0432\u0443\u043A \u043F\u0440\u0438\u0440\u043E\u0434\u044B.mp3"
+    - "Assets/Music/\u0437\u0432\u0443\u043A \u043F\u0440\u0438\u0440\u043E\u0434\u044B.mp3.meta"
+    - Assets/Prefabs/platform2.prefab
+    - Assets/Prefabs/platform2.prefab.meta
+    - "Assets/Prefabs/\u0448\u0438\u043F\u044B.prefab"
+    - "Assets/Prefabs/\u0448\u0438\u043F\u044B.prefab.meta"
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Script/Apples.cs
+    - Assets/Script/FallingApple.cs
+    - Assets/Script/HealthBar.cs
+    - Assets/Script/Music.cs
+    - Assets/Script/Music.cs.meta
+    - Assets/Script/PlayVideo.cs
+    - Assets/Script/Show.cs
+    - Assets/Script/Show.cs.meta
+    - Assets/Script/TextPlate.cs
+    - Assets/Script/Trigers/Cave.cs
+    - Assets/Script/Trigers/Cave.cs.meta
+    - Assets/Script/Trigers/FirstCheckpoint.cs
+    - Assets/Script/Trigers/FirstCheckpoint.cs.meta
+    - Assets/Script/Trigers/SecondCheckpoint.cs
+    - Assets/Script/Trigers/SecondCheckpoint.cs.meta
+    - Assets/Sprites/Level 2.prefab
+    - Assets/Sprites/Level one.prefab
+    - "Assets/Sprites/\u0448\u0438\u043F\u044B.png"
+    - "Assets/Sprites/\u0448\u0438\u043F\u044B.png.meta"
+    - "Assets/Video/\u043A\u0430\u0442 \u0441\u0446\u0435\u043D\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435.mp4"
+    - "Assets/Video/\u043A\u0430\u0442 \u0441\u0446\u0435\u043D\u0430 \u0432 \u043A\u043E\u043D\u0446\u0435.mp4.meta"
+    - 
+    m_Values: 00000000000000000000000000000000000000000000000000000000000000
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 

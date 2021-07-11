@@ -27,7 +27,6 @@ public class FallingApple : MonoBehaviour
             apple.bodyType  = RigidbodyType2D.Dynamic;
             StartCoroutine(PlayEND());
             StopCoroutine(PlayEND());
-            video.SetActive(false);
         }
     }
 
@@ -36,8 +35,7 @@ public class FallingApple : MonoBehaviour
         yield return new WaitForSeconds(2f);
         video.SetActive(true);
         _videoPlayer.Play();
-        yield return new WaitForSeconds(10f);
-        
+        yield return new WaitForSeconds(34f);
         _videoPlayer.Stop();
         Application.Quit();
         
